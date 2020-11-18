@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">     
+    <link rel="icon" type="image/png" href="./image/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Biuro Podatkowe</title>
 </head>
 <body>
-    
+    <div class="app-wrapper">
+       <nav class="navigation navigation--mobile-active">
+            <img src="./image/logo.png" alt="logo" class="navigation__logo navigation__logo--mobile-active"/>
+            <ul class="navigation__navigation-list navigation__navigation-list--mobile-active">
+                <li class="navigation__option navigation__option--mobile-active">
+                    <a class="navigation__link">Start</a>
+                </li>
+                <li class="navigation__option navigation__option--mobile-active">
+                    <a class="navigation__link">O nas</a>
+                </li>
+                <li class="navigation__option navigation__option--mobile-active">
+                    <a class="navigation__link">Usługi</a>
+                </li>
+                <li class="navigation__option navigation__option--mobile-active">
+                    <a class="navigation__link">Kontakt</a>
+                </li>
+            </ul>
+       </nav>
+       <main class="main">
+            <section class="banner">
+                <h1 class="banner__main-header">Biuro Podatkowe Gdańsk</h1>
+                <h2 class="banner__medium-header">Kamil Jankowski Doradca Podatkowy</h2>
+                <p class="banner__about">Pomożemy Ci zaplanować Twój biznes, aby rósł bezpiecznie i stabilnie</p>
+                <a class="banner__button-link">
+                    <button class="banner__inner-link">O nas</button>
+                </a>
+            </section>
+       </main>
+    </div>
 </body>
 </html>
