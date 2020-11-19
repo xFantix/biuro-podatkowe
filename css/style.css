@@ -54,39 +54,49 @@
   flex-direction: column; }
 
 .banner {
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 100px);
-  background-image: url("/image/bcg-banner-desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.705)), url("/image/bcg-banner-desktop.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center; }
   .banner__main-header {
     font-family: "Roboto", sans-serif;
     text-align: center;
     display: block;
-    margin-top: 120px;
     font-size: 60px;
     line-height: 1.2;
     color: white;
     letter-spacing: 10px;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+    margin-bottom: 30px; }
+    @media (max-width: 600px) {
+      .banner__main-header--mobile-active {
+        font-size: 40px; } }
   .banner__medium-header {
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 25px;
     letter-spacing: 5px;
-    color: white;
-    margin-top: 30px; }
+    color: white; }
+    @media (max-width: 600px) {
+      .banner__medium-header--mobile-active {
+        font-size: 18px; } }
   .banner__about {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 19px;
     color: #27bdb0;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.64);
-    margin-top: 15px; }
+    margin-bottom: 60px; }
+    @media (max-width: 600px) {
+      .banner__about--mobile-active {
+        font-size: 18px; } }
   .banner__button-link {
     display: block;
-    text-align: center;
-    margin-top: 50px; }
+    text-align: center; }
   .banner__inner-link {
     padding: 10px 40px;
     background-color: #00a2ff;
@@ -94,7 +104,44 @@
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 25px;
+    font-weight: 300;
+    cursor: pointer; }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .about-me__main-header {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 50px;
+    color: #026caa; }
+
+.description-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center; }
+  @media (max-width: 1000px) {
+    .description-container--mobile-active {
+      flex-direction: column;
+      justify-content: center; } }
+  .description-container__image {
+    width: 500px;
+    height: 350px; }
+    @media (max-width: 1000px) {
+      .description-container__image--mobile-active {
+        min-width: 75%; } }
+  .description-container__description {
+    width: 20%;
+    font-family: "Merriweather", serif;
+    text-align: justify;
     font-weight: 300; }
+    @media (max-width: 1000px) {
+      .description-container__description--mobile-active {
+        width: 75%;
+        padding-top: 30px; } }
 
 @media (max-width: 630px) {
   .navigation--mobile-active {
