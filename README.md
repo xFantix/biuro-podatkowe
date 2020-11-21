@@ -19,16 +19,15 @@ Tech/Framewor 🔧
 <h2>
 Live Page 💻
 </h2>
-<a href="https://xfantix.github.io/React-Obstawianie/">https://xfantix.github.io/React-Obstawianie/</a>
+<a href="https://xfantix.github.io/biuro-podatkowe/">https://xfantix.github.io/biuro-podatkowe/</a>
 <h2>
 Screens 📷
 </h2>
 
-![screen1](https://user-images.githubusercontent.com/48121526/97911202-2bd40500-1d4b-11eb-9c57-eb9f8747794b.png)
+![Screenshot_2020-11-21 Biuro Podatkowe](https://user-images.githubusercontent.com/48121526/99883397-83b5ab80-2c27-11eb-8e66-bd75ea834656.png)
 
-![screen2](https://user-images.githubusercontent.com/48121526/97911235-37273080-1d4b-11eb-97c8-890ab1bd37e0.png)
+![Screenshot_2020-11-21 Biuro Podatkowe(1)](https://user-images.githubusercontent.com/48121526/99883419-a8118800-2c27-11eb-90a7-f9c8e6d97560.png)
 
-![mobile1](https://user-images.githubusercontent.com/48121526/97911253-40b09880-1d4b-11eb-8d26-ca65a4731756.png)
 
 <br/>
 <footer> 	👦 <a href="https://www.facebook.com/kamil.jankowski.319">Kamil Jankowski</a> 	👦 </footer>
