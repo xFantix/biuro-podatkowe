@@ -14,6 +14,7 @@ $font-merriweather: "Merriweather", serif;
      width: 100%;
      min-height: 100vh;
      overflow: hidden;
+     scroll-behavior: smooth;
 }
 
 .navigation {
@@ -23,6 +24,15 @@ $font-merriweather: "Merriweather", serif;
      justify-content: space-between;
      align-items: center;
      border-bottom-color: #eaeaea;
+     scroll-behavior: smooth;
+
+     &__link {
+          text-decoration: none;
+          color: rgb(0, 127, 211);
+          @media (max-width: 630px) {
+               color: white;
+          }
+     }
      &__logo {
           &--mobile-active {
                @media (max-width: 630px) {
@@ -60,17 +70,20 @@ $font-merriweather: "Merriweather", serif;
           font-size: 20px;
           font-weight: 300;
           color: rgb(0, 127, 211);
+          text-decoration: none;
           cursor: pointer;
      }
 }
 .main {
      width: 100%;
      display: flex;
+     scroll-behavior: smooth;
      flex-direction: column;
 }
 .banner {
      display: flex;
      flex-direction: column;
+     scroll-behavior: smooth;
 
      height: calc(100vh - 100px);
      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.705)),
@@ -276,6 +289,7 @@ $font-merriweather: "Merriweather", serif;
      &__button {
           padding: 10px 40px;
           margin-top: 10px;
+          margin-bottom: 30px;
           width: 130px;
           background-color: rgb(0, 162, 255);
           border: none;
@@ -295,6 +309,92 @@ $font-merriweather: "Merriweather", serif;
           padding: 10px 30px;
           color: white;
           cursor: pointer;
+     }
+}
+.contact {
+     width: 100%;
+     display: flex;
+     background-color: #eee;
+     padding-bottom: 60px;
+     &--mobile-active {
+          @media (max-width: 800px) {
+               flex-direction: column;
+          }
+     }
+}
+.contact-form {
+     width: 50%;
+     margin-left: 30px;
+     &--mobile-active {
+          width: 100%;
+          justify-content: center;
+          margin: 0;
+     }
+     &__header {
+          font-family: $font-merriweather;
+          font-size: 35px;
+          padding: 60px 0px 0px 20px;
+          &--mobile-active {
+               padding: 0;
+               text-align: center;
+               padding-top: 60px;
+          }
+     }
+     &__label {
+          display: flex;
+          flex-direction: column;
+          font-family: $font-merriweather;
+          padding: 20px 0px 0px 20px;
+     }
+     &__input {
+          width: 350px;
+          margin-top: 10px;
+          height: 40px;
+          border: none;
+          padding-left: 10px;
+          font-family: $font-roboto;
+          &--mobile-active {
+               width: 80%;
+          }
+     }
+     &__textarea {
+          max-width: 350px;
+          margin-top: 10px;
+          padding-left: 10px;
+          font-family: $font-roboto;
+          &--mobile-active {
+               max-width: 80%;
+          }
+     }
+     &__button {
+          margin-top: 10px;
+          padding: 5px 40px;
+          background-color: #01314b;
+          font-family: $font-roboto;
+          margin-left: 20px;
+          color: white;
+          border: none;
+          cursor: pointer;
+     }
+}
+.information {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     &--mobile-active {
+          width: 100%;
+     }
+     &__text {
+          font-family: $font-merriweather;
+          font-size: 24px;
+          color: #01314b;
+          padding-top: 20px;
+     }
+     &__icon {
+          padding-right: 10px;
+          font-size: 24px;
      }
 }
 

@@ -13,24 +13,24 @@
 </head>
 <body>
     <div class="app-wrapper">
-       <nav class="navigation navigation--mobile-active">
+       <nav id="start" class="navigation navigation--mobile-active">
             <img src="./image/logo.png" alt="logo" class="navigation__logo navigation__logo--mobile-active"/>
             <ul class="navigation__navigation-list navigation__navigation-list--mobile-active">
                 <li class="navigation__option navigation__option--mobile-active">
-                    <a class="navigation__link">Start</a>
+                    <a href="#start" class="navigation__link">Start</a>
                 </li>
                 <li class="navigation__option navigation__option--mobile-active">
-                    <a class="navigation__link">O nas</a>
+                    <a href="#oNas" class="navigation__link">O nas</a>
                 </li>
                 <li class="navigation__option navigation__option--mobile-active">
-                    <a class="navigation__link">Usługi</a>
+                    <a href="#uslugi" class="navigation__link">Usługi</a>
                 </li>
                 <li class="navigation__option navigation__option--mobile-active">
-                    <a class="navigation__link">Kontakt</a>
+                    <a href="#kontakt" class="navigation__link">Kontakt</a>
                 </li>
             </ul>
        </nav>
-       <main class="main">
+       <main  class="main">
             <section class="banner">
                 <h1 class="banner__main-header banner__main-header--mobile-active">
                     Biuro Podatkowe Gdańsk
@@ -41,11 +41,11 @@
                 <p class="banner__about banner__about--mobile-active">
                     Pomożemy Ci zaplanować Twój biznes, aby rósł bezpiecznie i stabilnie
                 </p>
-                <a class="banner__button-link">
+                <a href="#oNas" class="banner__button-link">
                     <button class="banner__inner-link">O nas</button>
                 </a>
             </section>
-            <section class="about-me">
+            <section id="oNas" class="about-me">
                 <h2 class="about-me__main-header">
                     Dlaczego my?
                 </h2>
@@ -59,7 +59,7 @@
                 </p>
             </div>    
             </section>
-            <section class="offer">
+            <section class="offer" id="uslugi">
                 <div class="card">
                     <i class="fas fa-hands-helping card__icone"></i>
                     <h2 class="card__header">Pomoc i doradztwo</h2>
@@ -88,7 +88,7 @@
                         Obsługa kadrowo-płacowa pracownika na umowę o pracę, obsługa właściciela.
                 </div>
             </section>
-            <section class="newsletter newsletter--mobile-active">
+            <section id="kontakt" class="newsletter newsletter--mobile-active">
                 <div class="newsletter-description-container newsletter-description-container--mobile-active">
                     <h2 class="newsletter-description-container__header">Newsletter</h2>
                     <p class="newsletter-description-container__about">Bądz na bierząco z informacjami od nas</p>
@@ -108,6 +108,35 @@
                 <a class="socialmedia__link" href="https://www.twitter.com/" target="_blank">
                     <i class="fab fa-twitter socialmedia-item"></i>
                 </a>
+            </section>
+            <section  class="contact contact--mobile-active">
+                <form class="contact-form contact-form--mobile-active">
+                    <h2 class="contact-form__header contact-form__header--mobile-active">
+                        Formularz kontaktowy
+                    </h2>
+                    <label class="contact-form__label">
+                        Twoje imię i nazwisko: 
+                        <input type="text" 
+                        class="contact-form__input contact-form__input--mobile-active" 
+                        placeholder="Imię i nazwisko"/>
+                    </label>
+                    <label class="contact-form__label">
+                        Adres mailowy:
+                        <input type="text" 
+                        class="contact-form__input contact-form__input--mobile-active" 
+                        placeholder="Adres mailowy"/>
+                    </label>
+                    <label class="contact-form__label">
+                        Wiadomość:
+                        <textarea class="contact-form__textarea contact-form__textarea--mobile-active"></textarea>
+                    </label>
+                    <button type="submit" class="contact-form__button">Wyślij</button>
+                </form>
+                <div class="information information--mobile-active">
+                    <p class="information__text"><i class="fas fa-phone-alt information__icon"></i>123-123-123</p>
+                    <p class="information__text"><i class="far fa-envelope-open information__icon"></i>kontak@kontakt.pl</p>
+                    <p class="information__text"><i class="fas fa-map-marked-alt information__icon"></i>długa 24, Gdańsk</p>
+                </div>
             </section>
        </main>
     </div>
