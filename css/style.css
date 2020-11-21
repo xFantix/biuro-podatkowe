@@ -177,6 +177,72 @@
     font-family: "Roboto", sans-serif;
     color: white; }
 
+.newsletter {
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.705)), url("../image/bgc-contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-wrap: wrap; }
+  @media (max-width: 770px) {
+    .newsletter--mobile-active {
+      flex-direction: column;
+      justify-content: center; } }
+
+.newsletter-description-container {
+  width: 50%;
+  padding: 60px 0px;
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+  color: #1196e2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .newsletter-description-container__header {
+    font-size: 50px; }
+  @media (max-width: 770px) {
+    .newsletter-description-container--mobile-active {
+      width: 100%;
+      justify-content: center; } }
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media (max-width: 770px) {
+    .form-container--mobile-active {
+      width: 100%;
+      align-content: center;
+      align-items: center; } }
+  .form-container__input {
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif; }
+  .form-container__button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    width: 130px;
+    background-color: #00a2ff;
+    border: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer; }
+
+.socialmedia {
+  background-color: #dba6a6;
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .socialmedia__link {
+    display: block;
+    font-size: 30px;
+    padding: 10px 30px;
+    color: white; }
+
 @media (max-width: 630px) {
   .navigation--mobile-active {
     flex-direction: column;
